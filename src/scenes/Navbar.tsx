@@ -5,15 +5,16 @@ import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 type Props = {
   isTopOfPage: boolean;
+  selectedPage: string;
+  setSelectedPage: (value: string) => void;
 };
 
-const Navbar = ({ isTopOfPage }: Props) => {
-  const [selectedPage, setSelectedPage] = useState("none");
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    if (isTopOfPage) setSelectedPage("home");
-  }, []);
+  // useEffect(() => {
+  //   if (isTopOfPage) ;
+  // }, []);
 
   return (
     <nav>
