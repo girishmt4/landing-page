@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import Benefits from "./scenes/Benefits";
 import Classes from "./scenes/Classes";
+import Contact from "./scenes/Contact";
 import Home from "./scenes/Home";
 import Navbar from "./scenes/Navbar";
+import Footer from "./scenes/Footer";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -32,6 +34,8 @@ function App() {
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <Classes setSelectedPage={setSelectedPage} />
+      <Contact setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
