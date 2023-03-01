@@ -28,7 +28,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             hidden: { opacity: 0, x: -100 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="md:my-5 md:w-3/5"
+          className="lg:my-5 lg:w-3/5"
         >
           <h1 className="sectionHeader">MORE THAN JUST A GYM.</h1>
           <p className="my-5 text-sm">
@@ -57,7 +57,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               },
             },
           }}
-          className="mt-5 items-center justify-between gap-8 md:flex"
+          className="mt-5 items-center justify-between gap-8 lg:flex"
         >
           <motion.div
             variants={{
@@ -160,7 +160,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         </motion.div>
 
         {/* GRAPHICS AND DESC */}
-        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+        <div className="mt-16 items-center justify-between gap-20 lg:mt-28 lg:flex">
           {/* Image */}
           <img className="mx-auto" src={BenefitPageGraphic} alt="" />
 

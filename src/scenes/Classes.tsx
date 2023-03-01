@@ -26,7 +26,7 @@ const Classes = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <div className="md:w-3/5">
+          <div className="lg:w-3/5">
             <h1 className="sectionHeader">OUR CLASSES</h1>
             <p className="py-5">
               Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est

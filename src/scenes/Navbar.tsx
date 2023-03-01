@@ -17,7 +17,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   // }, []);
 
   return (
-    <nav>
+    <nav className="">
       <div
         className={`${
           isTopOfPage ? "" : "bg-primary-100 drop-shadow"
