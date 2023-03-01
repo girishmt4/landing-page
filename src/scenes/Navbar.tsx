@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Logo from "@/assets/Logo.png";
-import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 type Props = {
   isTopOfPage: boolean;
@@ -32,58 +31,58 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <div className="hidden lg:flex lg:w-full lg:items-center lg:justify-between">
               <ul className="flex items-center justify-between gap-8 text-sm">
                 <li>
-                  <NavLink
-                    to="#home"
+                  <a
+                    href="#home"
                     className={`${
                       selectedPage === "home" ? "text-primary-500" : ""
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("home")}
                   >
                     Home
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
-                    to="#benefits"
+                  <a
+                    href="#benefits"
                     className={`${
                       selectedPage === "benefits" ? "text-primary-500" : ""
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("benefits")}
                   >
                     Benefits
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
-                    to="#classes"
+                  <a
+                    href="#classes"
                     className={`${
                       selectedPage === "classes" ? "text-primary-500" : ""
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("classes")}
                   >
                     Classes
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink
-                    to="#contact"
+                  <a
+                    href="#contact"
                     className={`${
                       selectedPage === "contact" ? "text-primary-500" : ""
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("contact")}
                   >
                     Contact
-                  </NavLink>
+                  </a>
                 </li>
               </ul>
 
               <div className="flex items-center justify-between gap-8">
                 <p>Sign In</p>
-                <Link to="#contact" className="actionButton">
+                <a href="#contact" className="actionButton">
                   <button onClick={() => setSelectedPage("contact")}>
                     Become A Member
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -112,48 +111,48 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         {/* Menu Items */}
         <ul className={`ml-[33%] flex flex-col gap-4 text-2xl`}>
           <li>
-            <NavLink
-              to="#home"
+            <a
+              href="#home"
               className={`${
                 selectedPage === "home" ? "text-primary-500" : ""
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("home")}
             >
               Home
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="#benefits"
+            <a
+              href="#benefits"
               className={`${
                 selectedPage === "benefits" ? "text-primary-500" : ""
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("benefits")}
             >
               Benefits
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="#classes"
+            <a
+              href="#classes"
               className={`${
                 selectedPage === "classes" ? "text-primary-500" : ""
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("classes")}
             >
               Classes
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="#contact"
+            <a
+              href="#contact"
               className={`${
                 selectedPage === "contact" ? "text-primary-500" : ""
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("contact")}
             >
               Contact
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>

@@ -61,18 +61,18 @@ const Home = ({ setSelectedPage }: Props) => {
             }}
             className=" mt-8 flex items-center gap-8"
           >
-            <Link to="#contact" className="actionButton">
+            <a href="#contact" className="actionButton">
               <button onClick={() => setSelectedPage("contact")}>
                 Join Now
               </button>
-            </Link>
-            <Link
-              to="#contact"
+            </a>
+            <a
+              href="#contact"
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage("contact")}
             >
               <p>Learn More</p>
-            </Link>
+            </a>
           </motion.div>
         </div>
 

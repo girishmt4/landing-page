@@ -83,13 +83,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
               Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a
               in lectus pellentesque. Ullamcorper et.
             </p>
-            <Link
-              to="#contact"
+            <a
+              href="#contact"
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage("contact")}
             >
               <p>Learn More</p>
-            </Link>
+            </a>
           </motion.div>
 
           <motion.div
@@ -116,13 +116,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
               Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a
               in lectus pellentesque. Ullamcorper et.
             </p>
-            <Link
-              to="#contact"
+            <a
+              href="#contact"
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage("contact")}
             >
               <p>Learn More</p>
-            </Link>
+            </a>
           </motion.div>
 
           <motion.div
@@ -149,13 +149,13 @@ const Benefits = ({ setSelectedPage }: Props) => {
               Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a
               in lectus pellentesque. Ullamcorper et.
             </p>
-            <Link
-              to="#contact"
+            <a
+              href="#contact"
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage("contact")}
             >
               <p>Learn More</p>
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
 
@@ -222,11 +222,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
             {/* Button */}
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
-                <Link to="#contact" className="actionButton">
+                <a href="#contact" className="actionButton">
                   <button onClick={() => setSelectedPage("contact")}>
                     Join Now
                   </button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
