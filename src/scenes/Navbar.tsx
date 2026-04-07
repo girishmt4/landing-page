@@ -1,25 +1,24 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Logo from "@/assets/Logo.png";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon, SunIcon, MoonIcon } from "@heroicons/react/24/solid";
+
 type Props = {
   isTopOfPage: boolean;
   selectedPage: string;
   setSelectedPage: (value: string) => void;
+  isDarkMode: boolean;
+  setIsDarkMode: (value: boolean) => void;
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage, isDarkMode, setIsDarkMode }: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // useEffect(() => {
-  //   if (isTopOfPage) ;
-  // }, []);
 
   return (
     <nav className="">
       <div
         className={`${
-          isTopOfPage ? "" : "bg-primary-100 drop-shadow"
+          isTopOfPage ? "" : "bg-primary-100 dark:bg-dark-surface drop-shadow"
         } fixed top-0 z-30 flex w-full items-center justify-between py-6`}
       >
         <div className="mx-auto flex w-5/6 items-center justify-between">
@@ -34,7 +33,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   <a
                     href="#home"
                     className={`${
-                      selectedPage === "home" ? "text-primary-500" : ""
+                      selectedPage === "home" ? "text-primary-500" : "dark:text-dark-text"
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("home")}
                   >
@@ -45,7 +44,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   <a
                     href="#benefits"
                     className={`${
-                      selectedPage === "benefits" ? "text-primary-500" : ""
+                      selectedPage === "benefits" ? "text-primary-500" : "dark:text-dark-text"
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("benefits")}
                   >
@@ -56,7 +55,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   <a
                     href="#classes"
                     className={`${
-                      selectedPage === "classes" ? "text-primary-500" : ""
+                      selectedPage === "classes" ? "text-primary-500" : "dark:text-dark-text"
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("classes")}
                   >
@@ -67,7 +66,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   <a
                     href="#contact"
                     className={`${
-                      selectedPage === "contact" ? "text-primary-500" : ""
+                      selectedPage === "contact" ? "text-primary-500" : "dark:text-dark-text"
                     } focus:text-primary-500 active:text-primary-500`}
                     onClick={() => setSelectedPage("contact")}
                   >
@@ -77,7 +76,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               </ul>
 
               <div className="flex items-center justify-between gap-8">
-                <p>Sign In</p>
+                <button
+                  onClick={() => setIsDarkMode(!isDarkMode)}
+                  className="rounded-full p-2 transition hover:bg-gray-100 dark:hover:bg-dark-card"
+                  aria-label="Toggle dark mode"
+                >
+                  {isDarkMode ? (
+                    <SunIcon className="h-5 w-5 text-secondary-500" />
+                  ) : (
+                    <MoonIcon className="h-5 w-5 text-gray-500" />
+                  )}
+                </button>
                 <a href="#contact" className="actionButton">
                   <button onClick={() => setSelectedPage("contact")}>
                     Become A Member
@@ -86,19 +95,32 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <button
-              className="rounded-full bg-secondary-500 p-2 lg:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <Bars3Icon className="h-6 w-6 text-white" />
-            </button>
+            <div className="flex items-center gap-3 lg:hidden">
+              <button
+                onClick={() => setIsDarkMode(!isDarkMode)}
+                className="rounded-full p-2"
+                aria-label="Toggle dark mode"
+              >
+                {isDarkMode ? (
+                  <SunIcon className="h-5 w-5 text-secondary-500" />
+                ) : (
+                  <MoonIcon className="h-5 w-5 text-gray-500" />
+                )}
+              </button>
+              <button
+                className="rounded-full bg-secondary-500 p-2"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                <Bars3Icon className="h-6 w-6 text-white" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Mobile Menu Modal */}
       <div
-        className={`rightModal transition-all duration-500 ease-in  lg:hidden ${
+        className={`rightModal dark:bg-dark-surface transition-all duration-500 ease-in lg:hidden ${
           isMenuOpen ? "right-0" : "right-[-490px]"
         } `}
       >
@@ -114,7 +136,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <a
               href="#home"
               className={`${
-                selectedPage === "home" ? "text-primary-500" : ""
+                selectedPage === "home" ? "text-primary-500" : "dark:text-dark-text"
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("home")}
             >
@@ -125,7 +147,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <a
               href="#benefits"
               className={`${
-                selectedPage === "benefits" ? "text-primary-500" : ""
+                selectedPage === "benefits" ? "text-primary-500" : "dark:text-dark-text"
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("benefits")}
             >
@@ -136,7 +158,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <a
               href="#classes"
               className={`${
-                selectedPage === "classes" ? "text-primary-500" : ""
+                selectedPage === "classes" ? "text-primary-500" : "dark:text-dark-text"
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("classes")}
             >
@@ -147,7 +169,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <a
               href="#contact"
               className={`${
-                selectedPage === "contact" ? "text-primary-500" : ""
+                selectedPage === "contact" ? "text-primary-500" : "dark:text-dark-text"
               } focus:text-primary-500 active:text-primary-500`}
               onClick={() => setSelectedPage("contact")}
             >

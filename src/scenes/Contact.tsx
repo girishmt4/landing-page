@@ -41,10 +41,11 @@ const Contact = ({ setSelectedPage }: Props) => {
             <span className="text-primary-500">JOIN NOW</span> to Get In Shape
           </h1>
           <p className="my-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quod
-            sequi dicta velit repellat impedit rerum veritatis, tenetur
-            similique quam. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Officiis, sed.
+            Ready to make a change? Fill out the form below and one of our
+            membership coaches will reach out within 24 hours to set up your
+            free consultation, gym tour, and personalized fitness assessment.
+            No commitment required — just show up and see what EvoGym can do
+            for you.
           </p>
         </motion.div>
 

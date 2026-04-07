@@ -13,7 +13,7 @@ type Props = {
 
 const Classes = ({ setSelectedPage }: Props) => {
   return (
-    <section id="classes" className="w-full bg-primary-100 py-40">
+    <section id="classes" className="w-full bg-primary-100 dark:bg-dark-surface py-40">
       <motion.div onViewportEnter={() => setSelectedPage("classes")}>
         <motion.div
           className="mx-auto w-5/6"
@@ -29,10 +29,10 @@ const Classes = ({ setSelectedPage }: Props) => {
           <div className="lg:w-3/5">
             <h1 className="sectionHeader">OUR CLASSES</h1>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              No matter your fitness level or goal, we have a class built for
+              you. Our expert-led sessions are designed to challenge, inspire,
+              and deliver real results — in a fun, supportive environment you'll
+              actually look forward to.
             </p>
           </div>
         </motion.div>
@@ -40,12 +40,12 @@ const Classes = ({ setSelectedPage }: Props) => {
           <ul className="w-[2800px] whitespace-nowrap">
             <li className="relative mx-5 inline-block h-[380px] w-[450px]">
               <div className="overlayStyle">
-                <p className="text-2xl">Weight Training Classes</p>
+                <p className="text-2xl">Weight Training</p>
                 <p className="mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Build serious strength with our structured barbell and
+                  dumbbell programs. Led by certified strength coaches, these
+                  sessions cover compound lifts, progressive overload, and
+                  proper form to maximize muscle growth and power.
                 </p>
               </div>
               <img alt="" src={image1} />
@@ -53,12 +53,12 @@ const Classes = ({ setSelectedPage }: Props) => {
 
             <li className="relative mx-5 inline-block h-[380px] w-[450px]">
               <div className="overlayStyle">
-                <p className="text-2xl">Yoga Classes</p>
+                <p className="text-2xl">Yoga & Mindfulness</p>
                 <p className="mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Restore balance and flexibility with our yoga classes.
+                  From beginner flows to advanced vinyasa, each session
+                  blends breathwork, movement, and meditation to reduce
+                  stress and improve mobility.
                 </p>
               </div>
               <img alt="" src={image2} />
@@ -66,12 +66,12 @@ const Classes = ({ setSelectedPage }: Props) => {
 
             <li className="relative mx-5 inline-block h-[380px] w-[450px]">
               <div className="overlayStyle">
-                <p className="text-2xl">Ab Core Classes</p>
+                <p className="text-2xl">Core & Abs</p>
                 <p className="mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Strengthen your foundation with targeted core training.
+                  These high-rep, low-rest sessions focus on the abs,
+                  obliques, and lower back — building the stability and
+                  power that supports every other lift and movement.
                 </p>
               </div>
               <img alt="" src={image3} />
@@ -79,12 +79,12 @@ const Classes = ({ setSelectedPage }: Props) => {
 
             <li className="relative mx-5 inline-block h-[380px] w-[450px]">
               <div className="overlayStyle">
-                <p className="text-2xl">Adventure Classes</p>
+                <p className="text-2xl">Adventure Fitness</p>
                 <p className="mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Take your training outdoors with our adventure fitness
+                  programs. Combining hiking, obstacle courses, and
+                  functional movement, these classes push your limits while
+                  making fitness an unforgettable experience.
                 </p>
               </div>
               <img alt="" src={image4} />
@@ -92,12 +92,12 @@ const Classes = ({ setSelectedPage }: Props) => {
 
             <li className="relative mx-5 inline-block h-[380px] w-[450px]">
               <div className="overlayStyle">
-                <p className="text-2xl">Fitness Classes</p>
+                <p className="text-2xl">HIIT & Cardio</p>
                 <p className="mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Torch calories and boost your endurance with our
+                  high-intensity interval training classes. Short bursts
+                  of all-out effort followed by active recovery — maximum
+                  results in minimum time.
                 </p>
               </div>
               <img alt="" src={image5} />
@@ -105,12 +105,12 @@ const Classes = ({ setSelectedPage }: Props) => {
 
             <li className="relative mx-5 inline-block h-[380px] w-[450px]">
               <div className="overlayStyle">
-                <p className="text-2xl">Training Classes</p>
+                <p className="text-2xl">Personal Training</p>
                 <p className="mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Work one-on-one with a dedicated coach who builds a
+                  training plan around your specific goals, schedule, and
+                  fitness level. Accelerate your progress with expert
+                  accountability and customized programming.
                 </p>
               </div>
               <img alt="" src={image6} />

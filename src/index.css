@@ -12,7 +12,7 @@ body,
     height: 100%;
     font-family: "DM Sans", sans-serif;
     scroll-behavior: smooth;
-    @apply text-gray-500
+    @apply text-gray-500 dark:text-dark-text
 }
 
 @layer components {
@@ -21,11 +21,11 @@ body,
     }
 
     .rightModal {
-        @apply fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl
+        @apply fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 dark:bg-dark-surface drop-shadow-xl
     }
 
     .sectionHeader {
-        @apply basis-3/5 text-3xl  font-montserrat font-bold
+        @apply basis-3/5 text-3xl font-montserrat font-bold dark:text-dark-text
     }
 
     .overlayStyle {
@@ -36,6 +36,6 @@ body,
     }
 
     .formInput {
-        @apply w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white mb-5
+        @apply w-full rounded-lg bg-primary-300 dark:bg-dark-card dark:placeholder-dark-muted dark:text-dark-text px-5 py-3 placeholder-white mb-5
     }
 }

@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -16,6 +17,11 @@ module.exports = {
         "primary-500": "#ff6b66",
         "secondary-400": "#ffcd58",
         "secondary-500": "#ffc132",
+        "dark-bg": "#111827",
+        "dark-surface": "#1f2937",
+        "dark-card": "#374151",
+        "dark-text": "#f3f4f6",
+        "dark-muted": "#9ca3af",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred": "linear-gradient(90deg, #ff616a 0%, #ffc837 100%)",

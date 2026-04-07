@@ -9,6 +9,15 @@ import Footer from "./scenes/Footer";
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const [selectedPage, setSelectedPage] = useState("none");
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDarkMode]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,11 +34,13 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20 ">
+    <div className="app bg-gray-20 dark:bg-dark-bg">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
+        isDarkMode={isDarkMode}
+        setIsDarkMode={setIsDarkMode}
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />

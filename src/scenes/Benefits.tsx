@@ -32,12 +32,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
         >
           <h1 className="sectionHeader">MORE THAN JUST A GYM.</h1>
           <p className="my-5 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            deleniti impedit omnis rerum atque tempora, repudiandae officiis
-            adipisci architecto soluta corporis, nam distinctio, ut magnam
-            porro? Aliquid, eos debitis dicta ipsam autem labore distinctio
-            quasi praesentium, facere qui itaque beatae corporis nesciunt velit
-            tempore culpa! Iste .
+            We believe fitness is a lifestyle, not just a workout. At EvoGym,
+            we've built a community where every rep, every class, and every
+            milestone is celebrated. Whether you're just starting out or pushing
+            your peak performance, our world-class environment is designed to
+            help you evolve — physically and mentally.
           </p>
         </motion.div>
 
@@ -70,18 +69,19 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 scale: 1,
               },
             }}
-            className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card px-5 py-16 text-center"
           >
             <div className="mb-4 flex justify-center">
-              <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+              <div className="rounded-full border-2 border-gray-100 dark:border-dark-card bg-primary-100 dark:bg-dark-card p-4">
                 <HomeModernIcon className="h-6 w-6" />
               </div>
             </div>
 
             <h4 className="font-bold">State of the Art Facilities</h4>
             <p className="my-3">
-              Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a
-              in lectus pellentesque. Ullamcorper et.
+              Train in our 20,000 sq ft facility packed with the latest
+              equipment — from Olympic lifting platforms and functional rigs to
+              cardio zones and recovery lounges.
             </p>
             <a
               href="#contact"
@@ -103,18 +103,19 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 scale: 1,
               },
             }}
-            className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card px-5 py-16 text-center"
           >
             <div className="mb-4 flex justify-center">
-              <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+              <div className="rounded-full border-2 border-gray-100 dark:border-dark-card bg-primary-100 dark:bg-dark-card p-4">
                 <UserGroupIcon className="h-6 w-6" />
               </div>
             </div>
 
             <h4 className="font-bold">100's of Diverse Classes</h4>
             <p className="my-3">
-              Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a
-              in lectus pellentesque. Ullamcorper et.
+              From high-intensity HIIT and powerlifting to calming yoga and
+              pilates — our schedule offers 200+ weekly classes so there's
+              always something that fits your goals and your mood.
             </p>
             <a
               href="#contact"
@@ -136,18 +137,19 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 scale: 1,
               },
             }}
-            className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center"
+            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card px-5 py-16 text-center"
           >
             <div className="mb-4 flex justify-center">
-              <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
+              <div className="rounded-full border-2 border-gray-100 dark:border-dark-card bg-primary-100 dark:bg-dark-card p-4">
                 <AcademicCapIcon className="h-6 w-6" />
               </div>
             </div>
 
             <h4 className="font-bold">Expert and Pro Trainers</h4>
             <p className="my-3">
-              Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a
-              in lectus pellentesque. Ullamcorper et.
+              Our certified coaches bring decades of real-world experience in
+              strength, endurance, and sports nutrition — giving you personalized
+              guidance to hit your goals faster and safer.
             </p>
             <a
               href="#contact"
@@ -203,19 +205,18 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <p className="my-5 ">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Cupiditate, excepturi sequi nulla commodi delectus quas ducimus,
-                rem optio libero inventore adipisci itaque rerum repellat
-                aperiam impedit dolorum magni a, similique soluta totam
-                provident ratione eaque! Sequi deserunt perferendis quibusdam
-                placeat odit nemo quasi ipsum ea, aspernatur delectus alias
-                labore. Repudiandae?
+              <p className="my-5">
+                Since 2010, over 1.2 million members across 50 locations have
+                trusted EvoGym to help them transform their bodies and their
+                lives. Our results speak for themselves — 94% of members report
+                reaching their first fitness goal within 90 days of joining.
+                With flexible membership plans, no long-term contracts, and a
+                community that keeps you accountable, there's never been a
+                better time to start.
               </p>
               <p className="mb-5">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-                laudantium sequi fugit tempora eaque, id minima ut illum
-                repellat iste?
+                Your journey is unique, and we're here every step of the way.
+                Start today and discover what you're truly capable of.
               </p>
             </motion.div>
 
