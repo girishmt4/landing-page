@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) {
+      if (window.scrollY <= 10) {
         setIsTopOfPage(true);
         setSelectedPage("home");
       } else {
