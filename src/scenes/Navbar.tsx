@@ -19,7 +19,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage, isDarkMode, setIsD
       <div
         className={`${
           isTopOfPage ? "" : "bg-primary-100 dark:bg-dark-surface drop-shadow"
-        } fixed top-0 z-30 flex w-full items-center justify-between py-6`}
+        } fixed top-0 z-50 flex w-full items-center justify-between py-6`}
       >
         <div className="mx-auto flex w-5/6 items-center justify-between">
           <div className="flex w-full items-center justify-between gap-16">

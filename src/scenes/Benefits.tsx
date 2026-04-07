@@ -14,8 +14,8 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
-      <motion.div onViewportEnter={() => setSelectedPage("benefits")}>
+    <section id="benefits" className="w-full bg-gray-20 dark:bg-dark-bg py-20">
+      <motion.div onViewportEnter={() => setSelectedPage("benefits")} className="mx-auto w-5/6">
         {/* Header */}
         <motion.div
           initial="hidden"
@@ -69,11 +69,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 scale: 1,
               },
             }}
-            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card px-5 py-16 text-center"
+            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card dark:bg-dark-surface px-5 py-16 text-center"
           >
             <div className="mb-4 flex justify-center">
               <div className="rounded-full border-2 border-gray-100 dark:border-dark-card bg-primary-100 dark:bg-dark-card p-4">
-                <HomeModernIcon className="h-6 w-6" />
+                <HomeModernIcon className="h-6 w-6 text-gray-500 dark:text-primary-500" />
               </div>
             </div>
 
@@ -103,11 +103,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 scale: 1,
               },
             }}
-            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card px-5 py-16 text-center"
+            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card dark:bg-dark-surface px-5 py-16 text-center"
           >
             <div className="mb-4 flex justify-center">
               <div className="rounded-full border-2 border-gray-100 dark:border-dark-card bg-primary-100 dark:bg-dark-card p-4">
-                <UserGroupIcon className="h-6 w-6" />
+                <UserGroupIcon className="h-6 w-6 text-gray-500 dark:text-primary-500" />
               </div>
             </div>
 
@@ -137,11 +137,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 scale: 1,
               },
             }}
-            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card px-5 py-16 text-center"
+            className="mt-5 rounded-md border-2 border-gray-100 dark:border-dark-card dark:bg-dark-surface px-5 py-16 text-center"
           >
             <div className="mb-4 flex justify-center">
               <div className="rounded-full border-2 border-gray-100 dark:border-dark-card bg-primary-100 dark:bg-dark-card p-4">
-                <AcademicCapIcon className="h-6 w-6" />
+                <AcademicCapIcon className="h-6 w-6 text-gray-500 dark:text-primary-500" />
               </div>
             </div>
 

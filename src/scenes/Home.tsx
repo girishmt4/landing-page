@@ -13,7 +13,7 @@ type Props = {
 
 const Home = ({ setSelectedPage }: Props) => {
   return (
-    <section id="home" className="lg: gap-16 bg-gray-20 py-10 pb-0 lg:h-full">
+    <section id="home" className="lg: gap-16 bg-gray-20 dark:bg-dark-bg py-10 pb-0 lg:h-full">
       {/* Image and Main Header */}
       <motion.div
         onViewportEnter={() => setSelectedPage("home")}
@@ -83,7 +83,7 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {/* Sponsors */}
-      <div className="hidden lg:flex lg:h-[150px] lg:w-full lg:bg-primary-100 lg:py-10">
+      <div className="hidden lg:flex lg:h-[150px] lg:w-full lg:bg-primary-100 dark:bg-dark-surface lg:py-10">
         <div className="mx-auto flex w-5/6 items-center justify-center">
           <div className="flex w-4/5 items-center justify-between ">
             <img src={SponsorRedBull} alt="" />
